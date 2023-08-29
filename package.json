@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/hahahapluto/DependencyTreeCliDocs#readme",
   "devDependencies": {
+    "@vuepress/plugin-medium-zoom": "^1.9.10",
     "vuepress": "^1.9.10"
   }
 }

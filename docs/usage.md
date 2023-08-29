@@ -28,10 +28,6 @@ $ dependency-tree-cli ana
 
 该命令将从当前项目的 package.json 开始递归查找依赖关系，并将生成的依赖关系图自动打开，以网页的形式展现。
 
-![Alt text](/assets/ana.png)
-
-[图片](最终展示的网页)
-
 ### 控制深度
 
 您还可以使用--depth=n 参数来限制向下递归分析的层次深度。例如，如果您只想查看当前项目的直接依赖关系，可以运行以下命令：
@@ -42,8 +38,6 @@ $ dependency-tree-cli --depth = n
 $ dependency-tree-cli -d=n
 ```
 
-![Alt text](/assets/depth1.png)
-
 如果您不带参数直接利用 dependency-tree-cli --depth 命令，将会由命令行要求您输入层次深度。
 
 ```
@@ -51,10 +45,6 @@ $ dependency-tree-cli --depth
 
 $ dependency-tree-cli -d
 ```
-
-![Alt text](/assets/depth2.png)
-
-[图片]
 
 ### 保存成 JSON 文件
 
@@ -66,10 +56,6 @@ $ dependency-tree-cli --json=[file-path]
 $ dependency-tree-cli -j=[file-path]
 ```
 
-![Alt text](/assets/save1.png)
-
-[图片](最终生成的东西)
-
 如果您不带参数直接利用 dependency-tree-cli --json 命令，将会由命令行要求您输入你要指定文件路径。
 
 ```js
@@ -77,8 +63,6 @@ $ dependency-tree-cli --json
 
 $ dependency-tree-cli -j
 ```
-
-[图片]
 
 ### 查看版本
 
@@ -89,8 +73,6 @@ $ dependency-tree-cli --version
 
 $ dependency-tree-cli -V
 ```
-
-![Alt text](/assets/version.png)
 
 ### 查看帮助
 
@@ -103,8 +85,6 @@ $ dependency-tree-cli --help
 
 $ dependency-tree-cli --h
 ```
-
-![Alt text](/assets/help.png)
 
 ## 注意
 

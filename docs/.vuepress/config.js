@@ -2,6 +2,21 @@ module.exports = {
   title: "DependencyTreeCliDocs",
   description: "项目依赖分析工具说明文档",
   base: "/DependencyTreeCliDocs/",
+  head: [["link", { rel: "icon", href: "/assets/favicon.ico" }]],
+  markdown: {
+    // 允许自定义容器
+    extendsMarkdown: (md) => {
+      md.use(require("markdown-it-container"), "my-component", {
+        render: function (tokens, idx) {
+          if (tokens[idx].nesting === 1) {
+            return `<my-view>\n`;
+          } else {
+            return "</my-view>\n";
+          }
+        },
+      });
+    },
+  },
   locales: {
     "/": {
       lang: "zh-CN",
@@ -46,4 +61,12 @@ module.exports = {
     },
     sidebar: "auto",
   },
+  plugins: [
+    [
+      "@vuepress/plugin-medium-zoom",
+      {
+        selector: ".home-preview .medium-zoom-image",
+      },
+    ],
+  ],
 };

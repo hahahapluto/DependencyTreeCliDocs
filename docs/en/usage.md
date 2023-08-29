@@ -28,10 +28,6 @@ $ dependency-tree-cli ana
 
 This command will recursively search for dependencies starting from the current project's package.json, and automatically open the generated dependency graph in the form of a web page.
 
-![Alt text](/assets/ana.png)
-
-![Alt text](image.png)
-
 ### Control depth
 
 You can also use the -- depth=n parameter to limit the hierarchical depth of downward recursive analysis. For example, if you only want to view the direct dependencies of the current project, you can run the following command:
@@ -42,8 +38,6 @@ $ dependency-tree-cli --depth = n
 $ dependency-tree-cli -d=n
 ```
 
-![Alt text](/assets/depth1.png)
-
 If you use the dependency-tree-cli --depth command without parameters, you will be asked to enter the depth of the hierarchy from the command line.
 
 ```
@@ -51,8 +45,6 @@ $ dependency-tree-cli --depth
 
 $ dependency-tree-cli -d
 ```
-
-![Alt text](/assets/depth2.png)
 
 ### Save as JSON file
 
@@ -64,21 +56,12 @@ $ dependency-tree-cli --json=[file-path]
 $ dependency-tree-cli -j=[file-path]
 ```
 
-![Alt text](/assets/save1.png)
-
 If you use the dependency-tree-cli --json command without parameters, you will be asked by the command line to enter the file path you want to specify.
 
 ```js
 $ dependency-tree-cli --json
 
 $ dependency-tree-cli -j
-```
-
-```js
-PS D:\GitWarehouse\DependencyTreeCliDocs> dependency-tree-cli analyze
-✔ Successful！
-➜  Open:  http://localhost:8243
-➜  press  dependecy-tree-cli -h to show help
 ```
 
 ### View Version
