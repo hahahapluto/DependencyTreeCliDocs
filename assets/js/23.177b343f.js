@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{313:function(t,n,s){"use strict";s.r(n);var e=s(14),l=Object(e.a)({},(function(){var t=this._self._c;return t("ContentSlotsDistributor",{attrs:{"slot-key":this.$parent.slotKey}},[t("my-view",{attrs:{title:"截图预览"}})],1)}),[],!1,null,null,null);n.default=l.exports}}]);
